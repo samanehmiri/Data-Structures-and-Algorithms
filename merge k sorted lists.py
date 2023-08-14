@@ -48,7 +48,7 @@ class SortedList:
             for i in range(0, k - i, i * 2):
                 lists[i] = self.merge2Lists(lists[i], lists[i + i])
             i *= 2
-        return lists[0] if k > 0 else None
+        return lists[0] if k > 0 else None #in the end you have a single sorted linked list
     
     def merge2Lists(self, l1, l2):
         head = curr = ListNode(0)
